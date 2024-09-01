@@ -16,7 +16,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    Button btntxt2sp, btnNetChk, btntAudioP, btnMp3, btnPdfV, btnUDMethod, btnForLoop;
+    Button btntxt2sp, btnNetChk, btntAudioP, btnMp3, btnPdfV, btnUDMethod, btnForLoop, btnForLoop2;
     TextView title_Name;
     Animation title_animation;
 
@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         btnPdfV = findViewById(R.id.btnPdfV);
         btnUDMethod = findViewById(R.id.btnUDMethod);
         btnForLoop = findViewById(R.id.btnForLoop);
+        btnForLoop2 = findViewById(R.id.btnForLoop2);
         title_Name = findViewById(R.id.title_Name);
 
 
@@ -128,8 +129,6 @@ public class MainActivity extends AppCompatActivity {
         // ============== Button For Loop Start ===============//
 
 
-
-
         btnForLoop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -139,10 +138,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
-
         // ==============  Button For Loop End ================//
+
+        // ============== Button For Loop 2 Start =============//
+
+        btnForLoop2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent forLoop2Intent = new Intent(MainActivity.this, Activity_For_Loop_2.class);
+                startActivity(forLoop2Intent);
+            }
+        });
+
+
+
+        // ================ Button For Loop 2 End ==============//
 
 
 
