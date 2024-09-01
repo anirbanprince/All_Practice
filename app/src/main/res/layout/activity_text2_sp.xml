@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Text2SP"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    >
+
+    <TextView
+        android:id="@+id/tvTxt2Sp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Text To Voice Servce"
+        android:background="@drawable/t2v_bc_style"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#FEFFFF"
+        android:gravity="center"
+        />
+
+
+
+    <EditText
+        android:id="@+id/edtxt"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        />
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play Voice"
+        />
+
+
+
+
+
+
+
+</LinearLayout>

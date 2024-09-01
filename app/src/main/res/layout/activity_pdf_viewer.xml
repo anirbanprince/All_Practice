@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Pdf_Viewer"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:background="@drawable/main_bc_style"
+    >
+
+    <TextView
+        android:id="@+id/title_Name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Wellcome Pdf Viewer"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#D50000"
+        android:background="@drawable/main_bc_style"
+        />
+
+
+
+
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+
+
+
+</LinearLayout>
