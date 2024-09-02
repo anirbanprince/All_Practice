@@ -13,6 +13,86 @@
     >
 
 
+    <TextView
+        android:id="@+id/title_Name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Wellcome To For Loop Part 2"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#D50000"
+        android:background="@drawable/main_bc_style"
+        />
+
+    <Button
+        android:id="@+id/btnbs5"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Break Statement On 5"
+        />
+
+
+    <Button
+        android:id="@+id/btnConT"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue Statement On 5"
+        />
+
+
+
+
+    <Button
+        android:id="@+id/btnSub1to100"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sum of 1 to 100"
+        />
+
+
+
+
+    <Button
+        android:id="@+id/btnMT"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multiplication table"
+        />
+
+
+
+
+    <Button
+        android:id="@+id/btnFact"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Factorial"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tvd"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        />
+
+
+
+
+
+
+
+
 
 
 
