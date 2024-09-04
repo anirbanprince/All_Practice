@@ -16,7 +16,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    Button btntxt2sp, btnNetChk, btntAudioP, btnMp3, btnPdfV, btnUDMethod, btnForLoop, btnForLoop2;
+    Button btntxt2sp, btnNetChk, btntAudioP, btnMp3, btnPdfV, btnUDMethod, btnForLoop, btnForLoop2, btntForLoop3;
     TextView title_Name;
     Animation title_animation;
 
@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         btnUDMethod = findViewById(R.id.btnUDMethod);
         btnForLoop = findViewById(R.id.btnForLoop);
         btnForLoop2 = findViewById(R.id.btnForLoop2);
+        btntForLoop3 -findViewById(R.id.btntForLoop3);
         title_Name = findViewById(R.id.title_Name);
 
 
@@ -153,6 +154,19 @@ public class MainActivity extends AppCompatActivity {
 
 
         // ================ Button For Loop 2 End ==============//
+
+        // ============= For Loop Part 3 Star =================//
+
+
+        btntForLoop3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent forLoop3Intent = new Intent(MainActivity.this, Activity_For_Loop3.class);
+                startActivity(forLoop3Intent);
+            }
+        });
+
+        // ============= For Loop part 3 End =================//
 
 
 

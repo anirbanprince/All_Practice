@@ -5,6 +5,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -15,8 +16,9 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class Activity_For_Loop_2 extends AppCompatActivity {
     Animation title_anim;
-    TextView title_Name, tvd;
-    Button btnbs5, btnConT, btnSub1to100, btnMT, btnFact;
+    TextView title_Name, tvd, tvd2;
+    EditText edt;
+    Button btnbs5, btnConT, btnSub1to100, btnMT, btnFact, btnCalculate;
     double fac =1;
 
     @Override
@@ -27,11 +29,14 @@ public class Activity_For_Loop_2 extends AppCompatActivity {
         title_anim = AnimationUtils.loadAnimation(Activity_For_Loop_2.this, R.anim.title_anim);
         title_Name = findViewById(R.id.title_Name);
         tvd = findViewById(R.id.tvd);
+        tvd2 = findViewById(R.id.tvd2);
+        edt = findViewById(R.id.edt);
         btnbs5 = findViewById(R.id.btnbs5);
         btnConT = findViewById(R.id.btnConT);
         btnSub1to100 = findViewById(R.id.btnSub1to100);
         btnMT = findViewById(R.id.btnMT);
         btnFact = findViewById(R.id.btnFact);
+        btnCalculate = findViewById(R.id.btnCalculate);
 
 
 
@@ -104,6 +109,29 @@ public class Activity_For_Loop_2 extends AppCompatActivity {
                     fac = fac*x;
                 }
                 tvd.setText("Fac of 5 is : "+fac);
+            }
+        });
+
+
+
+        btnCalculate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (edt.length()>0){
+                    int num = Integer.parseInt(edt.getText().toString());
+                    tvd2.setText("");
+                    for (int x=1; x<=10; x++){
+                        int fnum = num*x;
+                        tvd2.append(""+num+" * "+x+" ="+fnum+"\n");
+                    }
+
+                } else {
+                    edt.setError("Please Enter a Number");
+                }
+
+
+
+
             }
         });
 
