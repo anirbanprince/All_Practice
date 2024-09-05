@@ -40,7 +40,7 @@ dependencies {
 
 
 
-    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+    implementation "com.github.barteksc:AndroidPdfViewer:2.3.0"
     implementation "com.airbnb.android:lottie:6.5.0"
 
 
