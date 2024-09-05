@@ -54,15 +54,49 @@
         android:layout_height="wrap_content"
         />
 
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="লিপ ইয়ার বের করার লুপ"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="30sp"
+        />
+
+    <EditText
+        android:id="@+id/edtSyear"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="First Number"
+        />
+
+    <EditText
+        android:id="@+id/edtLyear"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Last Number"
+        />
+
+    <Button
+        android:id="@+id/btnCal2"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        />
 
 
-
-
-
-
-
-
-
+    <TextView
+        android:id="@+id/tvd2"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
 
 
 
