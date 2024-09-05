@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         btnUDMethod = findViewById(R.id.btnUDMethod);
         btnForLoop = findViewById(R.id.btnForLoop);
         btnForLoop2 = findViewById(R.id.btnForLoop2);
-        btntForLoop3 -findViewById(R.id.btntForLoop3);
+        btntForLoop3 = findViewById(R.id.btntForLoop3);
         title_Name = findViewById(R.id.title_Name);
 
 
