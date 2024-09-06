@@ -41,7 +41,7 @@ dependencies {
 
 
     implementation "com.github.barteksc:AndroidPdfViewer:2.3.0"
-    implementation "com.airbnb.android:lottie:6.5.0"
+    implementation 'com.airbnb.android:lottie:6.5.2'
 
 
 }
