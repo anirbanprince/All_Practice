@@ -15,9 +15,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class Activity_Loop_HW extends AppCompatActivity {
-    TextView title_Name, tvd, tvd2;
-    EditText edt1;
-    Button btnCal;
+    TextView title_Name, tvd, tvd2, tvd11, tvd22;
+    EditText edt1, edt2;
+    Button btnCal, btnCal2;
     Animation title_anim;
 
     @Override
@@ -30,17 +30,23 @@ public class Activity_Loop_HW extends AppCompatActivity {
         title_Name = findViewById(R.id.title_Name);
         tvd = findViewById(R.id.tvd);
         tvd2 = findViewById(R.id.tvd2);
+        tvd11 = findViewById(R.id.tvd11);
+        tvd22 = findViewById(R.id.tvd22);
 
         edt1 =findViewById(R.id.edt1);
+        edt2 =findViewById(R.id.edt2);
 
         btnCal = findViewById(R.id.btnCal);
+        btnCal2 = findViewById(R.id.btnCal2);
+
+
+        title_Name.startAnimation(title_anim);
 
 
         btnCal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 tvd.setText("");
-
 
                 int sum = 0;
 
@@ -57,6 +63,26 @@ public class Activity_Loop_HW extends AppCompatActivity {
                 } else {
                     edt1.setError("Please Enter a number");
                 }
+
+            }
+        });
+
+
+        btnCal2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                tvd11.setText("");
+
+                int ipNum = Integer.parseInt(edt2.getText().toString());
+
+
+                for (int x=1; x<=ipNum; x++){
+
+                }
+
+
+
 
 
 
