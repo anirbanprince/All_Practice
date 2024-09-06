@@ -15,9 +15,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class Activity_Loop_HW extends AppCompatActivity {
-    TextView title_Name, tvd, tvd2;
-    EditText edt1;
-    Button btnCal;
+    TextView title_Name, tvd, tvd2, tvd11, tvd22, tvd3, tvd33;
+    EditText edt1, edt2, edt3;
+    Button btnCal, btnCal2, btnCal3;
     Animation title_anim;
 
     @Override
@@ -30,17 +30,27 @@ public class Activity_Loop_HW extends AppCompatActivity {
         title_Name = findViewById(R.id.title_Name);
         tvd = findViewById(R.id.tvd);
         tvd2 = findViewById(R.id.tvd2);
+        tvd11 = findViewById(R.id.tvd11);
+        tvd22 = findViewById(R.id.tvd22);
+        tvd3 = findViewById(R.id.tvd3);
+        tvd33 = findViewById(R.id.tvd33);
 
         edt1 =findViewById(R.id.edt1);
+        edt2 =findViewById(R.id.edt2);
+        edt3 =findViewById(R.id.edt3);
 
         btnCal = findViewById(R.id.btnCal);
+        btnCal2 = findViewById(R.id.btnCal2);
+        btnCal3 = findViewById(R.id.btnCal3);
+
+
+        title_Name.startAnimation(title_anim);
 
 
         btnCal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 tvd.setText("");
-
 
                 int sum = 0;
 
@@ -52,18 +62,64 @@ public class Activity_Loop_HW extends AppCompatActivity {
                             tvd.append(" "+x);
                             tvd2.setText("The Sum is :"+sum);
                         }
-
                     }
                 } else {
                     edt1.setError("Please Enter a number");
                 }
 
-
-
             }
         });
 
 
+        btnCal2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                tvd11.setText("");
+
+                if (edt2.length()>0){
+                    int sum=0, t=10;
+                    int n = Integer.parseInt(edt2.getText().toString());
+
+                    for (int x=1; x<=n; x++){
+                        t = (int) (Math.pow(10,x)-1);
+                        sum = sum+t;
+                        tvd11.append(" "+t);
+                        tvd22.setText("The Sum Is :"+sum);
+
+                    }
+                } else {
+                    edt2.setError("Please Enter a Number");
+                }
+            }
+        });
+
+
+
+        btnCal3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tvd3.setText("");
+                tvd33.setText("");
+
+                if (edt3.length()>0){
+                    int n = Integer.parseInt(edt3.getText().toString());
+                    int sum=0;
+
+                    for (int x=1; x<=n; x++){
+                        int sq =x*x;
+                        sum = sum + sq;
+                        tvd3.append(" "+sq);
+                        tvd33.setText(" "+sum);
+                    }
+
+                } else {
+                    edt3.setError("Please Enter a Number");
+                }
+
+
+            }
+        });
 
 
 
