@@ -43,7 +43,6 @@
         android:layout_height="wrap_content"
         android:hint="Enter Your Number"
         android:inputType="number"
-        android:textColor="@color/black"
         />
 
 
@@ -59,108 +58,23 @@
         android:id="@+id/tvd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
         />
     <TextView
         android:id="@+id/tvd2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="HomeWork_232.3"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:textColor="#D50000"
-        android:background="@drawable/main_bc_style"
-        />
-
-
-    <EditText
-        android:id="@+id/edt2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter Your Number"
-        android:inputType="number"
-        android:textColor="@color/black"
-        />
-
-
-    <Button
-        android:id="@+id/btnCal2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Calculate"
-        />
-
-
-    <TextView
-        android:id="@+id/tvd11"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        />
-    <TextView
-        android:id="@+id/tvd22"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:textStyle="bold"
         />
 
 
 
 
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="HomeWork_232.4"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:textColor="#D50000"
-        android:background="@drawable/main_bc_style"
-        />
 
 
-    <EditText
-        android:id="@+id/edt3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter Your Number"
-        android:inputType="number"
-        android:textColor="@color/black"
-        />
 
 
-    <Button
-        android:id="@+id/btnCal3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Calculate"
-        />
 
 
-    <TextView
-        android:id="@+id/tvd3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        />
-    <TextView
-        android:id="@+id/tvd33"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        />
 
 
 
