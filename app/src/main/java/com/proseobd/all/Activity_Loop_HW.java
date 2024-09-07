@@ -15,9 +15,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class Activity_Loop_HW extends AppCompatActivity {
-    TextView title_Name, tvd, tvd2, tvd11, tvd22, tvd3, tvd33;
-    EditText edt1, edt2, edt3;
-    Button btnCal, btnCal2, btnCal3;
+    TextView title_Name, tvd, tvd2, tvd22, tvd222, tvd3, tvd33, tvd4;
+    EditText edt1, edt2, edt3, edt4;
+    Button btnCal, btnCal2, btnCal3, btnCal4;
     Animation title_anim;
 
     @Override
@@ -30,18 +30,21 @@ public class Activity_Loop_HW extends AppCompatActivity {
         title_Name = findViewById(R.id.title_Name);
         tvd = findViewById(R.id.tvd);
         tvd2 = findViewById(R.id.tvd2);
-        tvd11 = findViewById(R.id.tvd11);
         tvd22 = findViewById(R.id.tvd22);
+        tvd222 = findViewById(R.id.tvd222);
         tvd3 = findViewById(R.id.tvd3);
         tvd33 = findViewById(R.id.tvd33);
+        tvd4 = findViewById(R.id.tvd4);
 
         edt1 =findViewById(R.id.edt1);
         edt2 =findViewById(R.id.edt2);
         edt3 =findViewById(R.id.edt3);
+        edt4 =findViewById(R.id.edt4);
 
         btnCal = findViewById(R.id.btnCal);
         btnCal2 = findViewById(R.id.btnCal2);
         btnCal3 = findViewById(R.id.btnCal3);
+        btnCal4 = findViewById(R.id.btnCal4);
 
 
         title_Name.startAnimation(title_anim);
@@ -75,7 +78,7 @@ public class Activity_Loop_HW extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                tvd11.setText("");
+                tvd22.setText("");
 
                 if (edt2.length()>0){
                     int sum=0, t=10;
@@ -84,8 +87,8 @@ public class Activity_Loop_HW extends AppCompatActivity {
                     for (int x=1; x<=n; x++){
                         t = (int) (Math.pow(10,x)-1);
                         sum = sum+t;
-                        tvd11.append(" "+t);
-                        tvd22.setText("The Sum Is :"+sum);
+                        tvd22.append(" "+t);
+                        tvd222.setText("The Sum Is :"+sum);
 
                     }
                 } else {
@@ -115,6 +118,33 @@ public class Activity_Loop_HW extends AppCompatActivity {
 
                 } else {
                     edt3.setError("Please Enter a Number");
+                }
+
+
+            }
+        });
+
+
+
+        btnCal4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                if (edt4.length()>0){
+
+
+                    String iputStr = edt4.getText().toString();
+                    String reverseStr = new  StringBuilder(iputStr).reverse().toString();
+                    if (reverseStr.equals(iputStr)){
+                        tvd4.setText(""+iputStr+" is a Palindrome");
+                    } else {
+                        tvd4.setText(""+iputStr+" is not a Palindrome");
+                    }
+
+
+                } else {
+                    edt4.setError("Please Input a Number");
                 }
 
 

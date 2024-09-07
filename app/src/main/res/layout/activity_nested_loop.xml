@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Nested_Loop"
+    android:background="@drawable/main_bc_style"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:orientation="vertical"
+    >
+
+
+
+    <TextView
+        android:id="@+id/title_Name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Nested For Loop"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#D50000"
+        android:background="@drawable/main_bc_style"
+        />
+
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        android:hint="How Many Row Do You Want?"
+        android:textColor="@color/black"
+        android:inputType="number"
+        />
+    <Button
+        android:id="@+id/btnMRAT"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Make Right Angled Triangle"
+        />
+    <TextView
+        android:id="@+id/tvd1"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#B32318"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Is This a Prime Number?"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#E92C1E"
+        android:textStyle="bold"
+        />
+
+
+    <EditText
+        android:id="@+id/edt2"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        android:hint="Enter Number"
+        android:textColor="@color/black"
+        android:inputType="number"
+        />
+    <Button
+        android:id="@+id/btnfindPN"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find"
+        />
+    <TextView
+        android:id="@+id/tvd2"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#B32318"
+        android:textStyle="bold"
+        />
+
+
+
+
+
+
+
+</LinearLayout>
