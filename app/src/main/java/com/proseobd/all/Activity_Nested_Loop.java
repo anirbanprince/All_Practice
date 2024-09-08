@@ -18,9 +18,9 @@ import com.airbnb.lottie.parser.IntegerParser;
 
 public class Activity_Nested_Loop extends AppCompatActivity {
     Animation animation;
-    EditText edt1, edt2;
-    Button btnMRAT, btnfindPN;
-    TextView title_Name, tvd1, tvd2;
+    EditText edt1, edt2, edt3, edt33;
+    Button btnMRAT, btnfindPN, btnfindPN2;
+    TextView title_Name, tvd1, tvd2,tvd3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,13 +31,17 @@ public class Activity_Nested_Loop extends AppCompatActivity {
 
         edt1 = findViewById(R.id.edt1);
         edt2 = findViewById(R.id.edt2);
+        edt3 = findViewById(R.id.edt3);
+        edt33 = findViewById(R.id.edt33);
 
         btnMRAT = findViewById(R.id.btnMRAT);
         btnfindPN = findViewById(R.id.btnfindPN);
+        btnfindPN2 = findViewById(R.id.btnfindPN2);
 
         title_Name = findViewById(R.id.title_Name);
         tvd1 = findViewById(R.id.tvd1);
         tvd2 = findViewById(R.id.tvd2);
+        tvd3 = findViewById(R.id.tvd3);
 
         title_Name.startAnimation(animation);
 
@@ -90,6 +94,30 @@ public class Activity_Nested_Loop extends AppCompatActivity {
                 } else {
                     edt2.setError("Please Enter a Number");
                 }
+
+
+            }
+        });
+
+
+
+        btnfindPN2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tvd1.setText("");
+                tvd2.setText("");
+                tvd3.setText("");
+
+                int fNum =Integer.parseInt(edt3.getText().toString());
+                int lNum =Integer.parseInt(edt33.getText().toString());
+
+
+                for (int x=fNum; x<=lNum; x++){
+
+                }
+
+
+
 
 
             }

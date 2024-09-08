@@ -16,7 +16,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    Button btntxt2sp, btnNetChk, btntAudioP, btnMp3, btnPdfV, btnUDMethod, btnForLoop, btnForLoop2, btntForLoop3, btnLoopHW, btnNestedLoop;
+    Button btntxt2sp, btnNetChk, btntAudioP, btnMp3, btnPdfV, btnUDMethod, btnForLoop, btnForLoop2, btntForLoop3, btnLoopHW, btnNestedLoop, btntArrey;
     TextView title_Name;
     Animation title_animation;
 
@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         btntForLoop3 = findViewById(R.id.btntForLoop3);
         btnLoopHW = findViewById(R.id.btnLoopHW);
         btnNestedLoop = findViewById(R.id.btnNestedLoop);
+        btntArrey = findViewById(R.id.btntArrey);
 
         title_Name = findViewById(R.id.title_Name);
 
@@ -200,6 +201,18 @@ public class MainActivity extends AppCompatActivity {
                 Intent nestedLoopIntent = new Intent(MainActivity.this, Activity_Nested_Loop.class);
                 startActivity(nestedLoopIntent);
 
+            }
+        });
+
+        // ============= Nested Loop End =====================//
+
+        // ================ Arrey Button Star ================//
+
+        btntArrey.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent arreyIntent = new Intent(MainActivity.this, Activity_Array.class);
+                startActivity(arreyIntent);
             }
         });
 
