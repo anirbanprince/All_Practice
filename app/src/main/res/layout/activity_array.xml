@@ -25,45 +25,6 @@
         android:background="@drawable/main_bc_style"
         />
 
-    <Button
-        android:id="@+id/btn1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Show 3rd Name"
-        />
-
-    <Button
-        android:id="@+id/btn2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Show 2nd Name"
-        />
-
-
-    <Button
-        android:id="@+id/btn3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Show 1st Name"
-        />
-
-
-    <Button
-        android:id="@+id/btn4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Show All Names"
-        />
-
-    <TextView
-        android:id="@+id/tvd"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:textStyle="italic"
-        android:textSize="25sp"
-        />
-
 
 
 
