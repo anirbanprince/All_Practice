@@ -16,7 +16,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    Button btntxt2sp, btnNetChk, btntAudioP, btnMp3, btnPdfV, btnUDMethod, btnForLoop, btnForLoop2, btntForLoop3, btnLoopHW, btnNestedLoop, btntArrey;
+    Button btntxt2sp, btnNetChk, btntAudioP, btnMp3, btnPdfV, btnUDMethod, btnForLoop, btnForLoop2,
+            btntForLoop3, btnLoopHW, btnNestedLoop, btntArrey, btnSP;
     TextView title_Name;
     Animation title_animation;
 
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         btnLoopHW = findViewById(R.id.btnLoopHW);
         btnNestedLoop = findViewById(R.id.btnNestedLoop);
         btntArrey = findViewById(R.id.btntArrey);
+        btnSP = findViewById(R.id.btnSP);
 
         title_Name = findViewById(R.id.title_Name);
 
@@ -213,6 +215,19 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent arreyIntent = new Intent(MainActivity.this, Activity_Array.class);
                 startActivity(arreyIntent);
+            }
+        });
+        // ============= Arrey Activity End Here ============//
+
+
+        // ============= Shared Performance Start ===========//
+
+
+        btnSP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent spIntent = new Intent(MainActivity.this, Activity_Shared_P.class);
+                startActivity(spIntent);
             }
         });
 
