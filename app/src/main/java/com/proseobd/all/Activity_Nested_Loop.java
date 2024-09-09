@@ -114,6 +114,8 @@ public class Activity_Nested_Loop extends AppCompatActivity {
 
                 for (int x=fNum; x<=lNum; x++){
 
+
+
                 }
 
 
