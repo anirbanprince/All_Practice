@@ -1,6 +1,8 @@
 package com.proseobd.all;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -13,6 +15,8 @@ import androidx.core.view.WindowInsetsCompat;
 public class Activity_Shared_P extends AppCompatActivity {
     EditText edt;
     Button btnSaveData, btnNext;
+    SharedPreferences sharedPerferences;
+    SharedPreferences.Editor editor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +28,21 @@ public class Activity_Shared_P extends AppCompatActivity {
         btnSaveData = findViewById(R.id.btnSaveData);
         btnNext = findViewById(R.id.btnNext);
 
+        sharedPerferences = getSharedPreferences( getString(R.string.app_name) , MODE_PRIVATE);
+
+        editor = sharedPerferences.edit() ;
 
 
 
+        btnSaveData.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String name = edt.getText().toString() ;
+                editor.putString( "name" , ""+name ) ;
+                editor.apply();
 
+            }
+        });
 
 
 
