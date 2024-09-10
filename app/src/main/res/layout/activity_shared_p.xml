@@ -34,6 +34,14 @@
         android:textColor="@color/black"
         />
 
+    <EditText
+        android:id="@+id/edtAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write Your Age"
+        android:textColor="@color/black"
+        />
+
     <Button
         android:id="@+id/btnSaveData"
         android:layout_width="match_parent"
@@ -47,14 +55,6 @@
         android:layout_height="wrap_content"
         android:text="Next"
         />
-
-
-
-
-
-
-
-
 
 
 </LinearLayout>

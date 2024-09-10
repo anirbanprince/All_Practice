@@ -1,5 +1,6 @@
 package com.proseobd.all;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -13,7 +14,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class Activity_Shared_P extends AppCompatActivity {
-    EditText edt;
+    EditText edt, edtAge;
     Button btnSaveData, btnNext;
     SharedPreferences sharedPerferences;
     SharedPreferences.Editor editor;
@@ -24,6 +25,7 @@ public class Activity_Shared_P extends AppCompatActivity {
         setContentView(R.layout.activity_shared_p);
 
         edt = findViewById(R.id.edt);
+        edtAge = findViewById(R.id.edtAge);
 
         btnSaveData = findViewById(R.id.btnSaveData);
         btnNext = findViewById(R.id.btnNext);
@@ -37,9 +39,26 @@ public class Activity_Shared_P extends AppCompatActivity {
         btnSaveData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
+
+
                 String name = edt.getText().toString() ;
                 editor.putString( "name" , ""+name ) ;
                 editor.apply();
+
+                int age = Integer.parseInt( edtAge.getText().toString() ) ;
+                editor.putInt( "age", age ) ;
+                editor.apply();
+
+            }
+        });
+
+
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Activity_Shared_P.this, Activity_SP_Ext.class));
 
             }
         });
