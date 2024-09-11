@@ -25,7 +25,6 @@ public class Activity_Shared_P extends AppCompatActivity {
         setContentView(R.layout.activity_shared_p);
 
         edt = findViewById(R.id.edt);
-        edtAge = findViewById(R.id.edtAge);
 
         btnSaveData = findViewById(R.id.btnSaveData);
         btnNext = findViewById(R.id.btnNext);

@@ -13,34 +13,75 @@
 
     >
 
-    <TextView
-        android:id="@+id/title_Name"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="Shared Preferences"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:textColor="#D50000"
-        android:background="@drawable/main_bc_style"
-        />
-    
-    
-    <EditText
-        android:id="@+id/edt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Write Your Name"
-        android:textColor="@color/black"
-        />
 
-    <EditText
-        android:id="@+id/edtAge"
+
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Write Your Age"
-        android:textColor="@color/black"
-        />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:text="Name:" />
+
+            <EditText
+                android:id="@+id/nameText"
+                android:layout_width="199dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/ageText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:text="Age:" />
+
+            <NumberPicker
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                />
+
+            <TextView
+                android:id="@+id/dobText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:text="Date of Birth:" />
+
+            <DatePicker
+                android:id="@+id/dob"
+                android:layout_width="298dp"
+                android:layout_height="308dp"
+                android:scaleX=".8"
+                android:scaleY=".8" />
+
+            <TextView
+                android:id="@+id/information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:text="" />
+
+
+        </LinearLayout>
+    </ScrollView>
 
     <Button
         android:id="@+id/btnSaveData"
@@ -55,6 +96,10 @@
         android:layout_height="wrap_content"
         android:text="Next"
         />
+
+
+
+
 
 
 </LinearLayout>
