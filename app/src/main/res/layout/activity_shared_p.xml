@@ -13,6 +13,14 @@
 
     >
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UnComPleted"
+        android:textSize="40sp"
+        android:gravity="center"
+        />
+
 
 
 
@@ -36,7 +44,7 @@
                 android:text="Name:" />
 
             <EditText
-                android:id="@+id/nameText"
+                android:id="@+id/edName"
                 android:layout_width="199dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -51,7 +59,7 @@
                 android:text="Age:" />
 
             <NumberPicker
-                android:id="@+id/age"
+                android:id="@+id/npAge"
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 />
@@ -65,7 +73,7 @@
                 android:text="Date of Birth:" />
 
             <DatePicker
-                android:id="@+id/dob"
+                android:id="@+id/dpDob"
                 android:layout_width="298dp"
                 android:layout_height="308dp"
                 android:scaleX=".8"
