@@ -257,7 +257,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity( new Intent( MainActivity.this, Activity_List_View.class) );
             }
         });
-
+        //=================== List View End Here =======================//
 
 
 
