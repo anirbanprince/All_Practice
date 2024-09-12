@@ -17,6 +17,12 @@
         android:theme="@style/Theme.All"
         tools:targetApi="31">
         <activity
+            android:name=".Activity_List_View"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Layout_Inflater"
+            android:exported="false" />
+        <activity
             android:name=".Activity_SP_Ext"
             android:exported="false" />
         <activity

@@ -17,7 +17,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
     Button btntxt2sp, btnNetChk, btntAudioP, btnMp3, btnPdfV, btnUDMethod, btnForLoop, btnForLoop2,
-            btntForLoop3, btnLoopHW, btnNestedLoop, btntArrey, btnSP;
+            btntForLoop3, btnLoopHW, btnNestedLoop, btntArrey, btnSP, btnLayoutInflater, btntListView;
     TextView title_Name;
     Animation title_animation;
 
@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
         btnNestedLoop = findViewById(R.id.btnNestedLoop);
         btntArrey = findViewById(R.id.btntArrey);
         btnSP = findViewById(R.id.btnSP);
+        btnLayoutInflater = findViewById(R.id.btnLayoutInflater);
+        btntListView = findViewById(R.id.btntListView);
 
         title_Name = findViewById(R.id.title_Name);
 
@@ -231,6 +233,30 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // ============ Shared Preference End Here ===============//
+
+
+        // ============== Layout Infeter Start =============//
+
+        btnLayoutInflater.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent( MainActivity.this, Activity_Layout_Inflater.class) );
+            }
+        });
+
+        //=============== Layout Infleter End ============//
+
+
+        //========== List View Start ================//
+
+        btntListView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity( new Intent( MainActivity.this, Activity_List_View.class) );
+            }
+        });
 
 
 

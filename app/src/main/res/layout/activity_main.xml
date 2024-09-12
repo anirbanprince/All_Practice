@@ -201,20 +201,20 @@
             />
 
         <Button
-            android:id="@+id/btntxt2sp"
+            android:id="@+id/btnLayoutInflater"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="Text2Speace"
+            android:text="Layout Inflate"
             android:layout_weight="1"
             />
 
         <Button
-            android:id="@+id/btntxt2sp"
+            android:id="@+id/btntListView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="Text2Speace"
+            android:text="List View"
             android:layout_weight="1"
             />
 
