@@ -19,6 +19,7 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:src="@drawable/seo_expert"
+            android:layout_margin="5dp"
             />
 
         <LinearLayout
@@ -26,7 +27,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="left|center"
-            android:layout_marginLeft="10dp"
             >
 
 
