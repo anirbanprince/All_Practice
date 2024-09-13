@@ -12,33 +12,76 @@
     android:background="#0B6477"
     >
 
-    <Button
-        android:id="@+id/btnAdd"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add Layout"
+        android:padding="5dp"
+        android:text="For Detail Information Click On The Button Bello"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#80CBC4"
+        android:gravity="center"
         />
 
-    <Button
-        android:id="@+id/btnRemove"
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Remove Layout"
-        />
+        android:layout_height="400dp"
+        android:padding="5dp"
+        >
+
 
     <LinearLayout
         android:id="@+id/layOut2"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="#0ADAC8"
-        android:padding="5dp">
+
+        >
 
 
 
     </LinearLayout>
 
+    </ScrollView>
 
+
+    <Button
+        android:id="@+id/btnRajat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rajat"
+        />
+
+    <Button
+        android:id="@+id/btnSanaul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sanaul"
+        />
+
+    <Button
+        android:id="@+id/btnNoni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Noni"
+        />
+
+    <Button
+        android:id="@+id/btnBulbul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bulbul"
+        />
+
+    <Button
+        android:id="@+id/btnAsish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Asish"
+        />
 
 
 

@@ -23,7 +23,8 @@ public class Activity_List_View extends AppCompatActivity {
         listView = findViewById(R.id.listView);
 
 
-       MyAdapter myAdapter = new MyAdapter();
+        MyAdapter myAdapter = new MyAdapter();
+
        listView.setAdapter(myAdapter);
 
 
@@ -45,7 +46,8 @@ public class Activity_List_View extends AppCompatActivity {
 
 
 
-// ===================== My Adapter ==================//
+    // ===================== My Adapter Start ==================//
+
     private class MyAdapter extends BaseAdapter {
 
         @Override
@@ -68,8 +70,7 @@ public class Activity_List_View extends AppCompatActivity {
             return null;
         }
     }
-
-    // ===================== My Adapter ==================//
+    // ===================== My Adapter End ==================//
 
 
 

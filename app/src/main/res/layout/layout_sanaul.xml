@@ -5,8 +5,8 @@
     android:orientation="vertical"
     android:layout_margin="5dp"
     android:padding="5dp"
-    android:background="#14919B"
-    android:id="@+id/layoutARP"
+    android:background="#45DFB1"
+    android:id="@+id/layoutSanaul"
     >
 
 
@@ -27,26 +27,31 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Anirban Prince"
+        android:text="Sanaul"
         android:textSize="25sp"
         android:textStyle="bold"
+        android:textColor="#1565C0"
         android:gravity="center"
+        android:layout_marginBottom="2dp"
         />
 
 
     <ImageView
-        android:id="@+id/imgSEOexpert"
+        android:id="@+id/imgSanaul"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:src="@drawable/seo_expert"
+        android:src="@drawable/sanaul"
         />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="I am Amitabh, a professional SEO expert with more than 6 (Six) years of experience.
-
-I work with clients all over the globe to help them grow their businesses or websites fast with my exceptional on-page SEO, technical SEO, and off-page SEO tricks. I fix WordPress, Wix, and Shopify websites to rank fast."
+        android:text="Full Name : Sanaul Islam Sany
+        \nWork : Married to Ayesha Yana.
+\nEducation : Govt Titumir college.
+\nMobile : 01716-027192"
+        android:padding="5dp"
+        android:textColor="@color/black"
         android:textSize="16sp"
         />
 
