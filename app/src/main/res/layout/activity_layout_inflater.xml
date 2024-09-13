@@ -26,6 +26,18 @@
         android:text="Remove Layout"
         />
 
+    <LinearLayout
+        android:id="@+id/layOut2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:background="#0ADAC8"
+        android:padding="5dp">
+
+
+
+    </LinearLayout>
+
 
 
 
