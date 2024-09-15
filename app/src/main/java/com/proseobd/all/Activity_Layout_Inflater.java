@@ -13,11 +13,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Activity_Layout_Inflater extends AppCompatActivity {
 
-    Button btnRajat, btnSanaul;
+    Button btnRajat, btnSanaul, btnNoni;
     LinearLayout mainLayout, layOut2;
     LayoutInflater layoutInflater;
     View myView;
-    ImageView imgSEOexpert, imgRajat, imgSanaul;
+    ImageView imgSEOexpert, imgRajat, imgSanaul, imgNoni;
 
 
     @Override
@@ -27,6 +27,7 @@ public class Activity_Layout_Inflater extends AppCompatActivity {
 
         btnRajat = findViewById(R.id.btnRajat);
         btnSanaul = findViewById(R.id.btnSanaul);
+        btnNoni = findViewById(R.id.btnNoni);
 
         mainLayout = findViewById(R.id.mainLayout);
         layOut2 = findViewById(R.id.layOut2);
@@ -73,6 +74,22 @@ public class Activity_Layout_Inflater extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Toast.makeText(Activity_Layout_Inflater.this, "Hello I.m Sanaul",Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+        });
+
+
+        btnNoni.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                layOut2.removeAllViews();
+                myView = layoutInflater.inflate(R.layout.layout_noni, layOut2);
+                imgNoni = myView.findViewById(R.id.imgNoni);
+                imgNoni.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(Activity_Layout_Inflater.this, "Hello I'm Noni", Toast.LENGTH_SHORT).show();
                     }
                 });
             }

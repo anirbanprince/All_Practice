@@ -1,6 +1,8 @@
 package com.proseobd.all;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -52,7 +54,7 @@ public class Activity_List_View extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return 0;
+            return 5;
         }
 
         @Override
@@ -67,7 +69,9 @@ public class Activity_List_View extends AppCompatActivity {
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            return null;
+            LayoutInflater layoutInflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            View myView = layoutInflater.inflate(R.layout.activity_list_view_ext, ViewGroup, false);
+            return myView;
         }
     }
     // ===================== My Adapter End ==================//
