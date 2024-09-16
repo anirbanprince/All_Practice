@@ -17,7 +17,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
     Button btntxt2sp, btnNetChk, btntAudioP, btnMp3, btnPdfV, btnUDMethod, btnForLoop, btnForLoop2,
-            btntForLoop3, btnLoopHW, btnNestedLoop, btntArrey, btnSP, btnLayoutInflater, btntListView;
+            btntForLoop3, btnLoopHW, btnNestedLoop, btntArrey, btnSP, btnLayoutInflater, btntListView, btnHmap;
     TextView title_Name;
     Animation title_animation;
 
@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         btnSP = findViewById(R.id.btnSP);
         btnLayoutInflater = findViewById(R.id.btnLayoutInflater);
         btntListView = findViewById(R.id.btntListView);
+        btnHmap = findViewById(R.id.btnHmap);
 
         title_Name = findViewById(R.id.title_Name);
 
@@ -259,6 +260,16 @@ public class MainActivity extends AppCompatActivity {
         });
         //=================== List View End Here =======================//
 
+
+
+        // ============= HasMap Start ================== //
+
+        btnHmap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Activity_HasMap.class));
+            }
+        });
 
 
 
