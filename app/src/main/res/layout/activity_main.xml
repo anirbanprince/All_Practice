@@ -249,11 +249,11 @@
             />
 
         <Button
-            android:id="@+id/btntxt2sp"
+            android:id="@+id/btntNews"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="Text2Speace"
+            android:text="News APP"
             android:layout_weight="1"
             />
 

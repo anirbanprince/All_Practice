@@ -18,7 +18,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
     Button btntxt2sp, btnNetChk, btntAudioP, btnMp3, btnPdfV, btnUDMethod, btnForLoop, btnForLoop2,
             btntForLoop3, btnLoopHW, btnNestedLoop, btntArrey, btnSP, btnLayoutInflater, btntListView, btnHmap,
-            btnHW242;
+            btnHW242, btntNews;
     TextView title_Name;
     Animation title_animation;
 
@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         btntListView = findViewById(R.id.btntListView);
         btnHmap = findViewById(R.id.btnHmap);
         btnHW242 = findViewById(R.id.btnHW242);
+        btntNews = findViewById(R.id.btntNews);
 
         title_Name = findViewById(R.id.title_Name);
 
@@ -284,6 +285,22 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, Activity_HW242.class));
             }
         });
+
+        //  =========== Home Work 242 End ==============//
+
+
+
+        // ========================= News APP Start ==========================//
+
+        btntNews.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Activity_News.class));
+            }
+        });
+
+        // ========================= News APP End ============================//
+
 
 
 
