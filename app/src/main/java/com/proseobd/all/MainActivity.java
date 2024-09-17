@@ -17,7 +17,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
     Button btntxt2sp, btnNetChk, btntAudioP, btnMp3, btnPdfV, btnUDMethod, btnForLoop, btnForLoop2,
-            btntForLoop3, btnLoopHW, btnNestedLoop, btntArrey, btnSP, btnLayoutInflater, btntListView, btnHmap;
+            btntForLoop3, btnLoopHW, btnNestedLoop, btntArrey, btnSP, btnLayoutInflater, btntListView, btnHmap,
+            btnHW242;
     TextView title_Name;
     Animation title_animation;
 
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         btnLayoutInflater = findViewById(R.id.btnLayoutInflater);
         btntListView = findViewById(R.id.btntListView);
         btnHmap = findViewById(R.id.btnHmap);
+        btnHW242 = findViewById(R.id.btnHW242);
 
         title_Name = findViewById(R.id.title_Name);
 
@@ -262,12 +264,24 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        // ============= HasMap Start ================== //
+        // ============= HashMap Start ================== //
 
         btnHmap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, Activity_HasMap.class));
+            }
+        });
+
+        // ==================== HashMap End  ==================//
+
+
+        // =============== Home Work 242 Start ===============//
+
+        btnHW242.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Activity_HW242.class));
             }
         });
 

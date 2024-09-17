@@ -6,9 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -53,11 +51,10 @@ public class Activity_List_View extends AppCompatActivity {
     // ===================== My Adapter Start ==================//
 
     private class MyAdapter extends BaseAdapter {
-        ViewGroup viewGroup;
 
         @Override
         public int getCount() {
-            return 50;
+            return 5;
         }
 
         @Override
@@ -73,23 +70,21 @@ public class Activity_List_View extends AppCompatActivity {
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             LayoutInflater layoutInflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View myView = layoutInflater.inflate(R.layout.activity_list_view_ext, viewGroup, false);
-
-            ImageView imageView = myView.findViewById(R.id.imageView);
-
-            imageView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Toast.makeText(Activity_List_View.this,"Hello - "+position, Toast.LENGTH_SHORT).show();
-                }
-            });
-
-
-
+            View myView = layoutInflater.inflate(R.layout.activity_list_view_ext, parent, false);
             return myView;
         }
     }
     // ===================== My Adapter End ==================//
+
+
+
+
+
+
+
+
+
+
 
 
 

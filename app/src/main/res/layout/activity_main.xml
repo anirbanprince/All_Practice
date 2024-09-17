@@ -240,11 +240,11 @@
             />
 
         <Button
-            android:id="@+id/btntxt2sp"
+            android:id="@+id/btnHW242"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="Text2Speace"
+            android:text="Home W 242"
             android:layout_weight="1"
             />
 
