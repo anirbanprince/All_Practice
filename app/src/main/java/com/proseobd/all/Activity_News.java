@@ -2,7 +2,9 @@ package com.proseobd.all;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -105,6 +107,15 @@ public class Activity_News extends AppCompatActivity {
             lLay.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
+
+                    Activity_News_Details.TITLE=title;
+                    Activity_News_Details.DESCRIPTION=des;
+
+                    Bitmap bitmap = ((BitmapDrawable) imgCover.getDrawable()).getBitmap();
+
+                    Activity_News_Details.MY_BITMAP=bitmap;
+
 
                     startActivity(new Intent(Activity_News.this, Activity_News_Details.class));
 
