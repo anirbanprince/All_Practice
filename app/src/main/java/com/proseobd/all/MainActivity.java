@@ -18,7 +18,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
     Button btntxt2sp, btnNetChk, btntAudioP, btnMp3, btnPdfV, btnUDMethod, btnForLoop, btnForLoop2,
             btntForLoop3, btnLoopHW, btnNestedLoop, btntArrey, btnSP, btnLayoutInflater, btntListView, btnHmap,
-            btnHW242, btntNews;
+            btnHW242, btntNews, btnGridView;
     TextView title_Name;
     Animation title_animation;
 
@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         btnHmap = findViewById(R.id.btnHmap);
         btnHW242 = findViewById(R.id.btnHW242);
         btntNews = findViewById(R.id.btntNews);
+        btnGridView = findViewById(R.id.btnGridView);
 
         title_Name = findViewById(R.id.title_Name);
 
@@ -300,6 +301,17 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // ========================= News APP End ============================//
+
+        // ======================= Grid View Activity Start =================== //
+
+        btnGridView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Activity_Grid_View.class));
+            }
+        });
+
+        // ======================= Grid View Activity End =================== //
 
 
 
